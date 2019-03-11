@@ -1,0 +1,73 @@
+footer{
+    background-color: #19345E;
+    padding: 20px 0;
+    margin-top: 15px;
+
+}
+
+
+#outer-footer-logo{
+
+    margin-top: 10px;
+
+}
+#footer-logo{
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+}
+
+#p-footer-logo{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color : white;
+    font-size: 12px;
+}
+
+#footer-left, #footer-right{
+
+    margin-top: 50px;
+}
+
+.text-right{
+    margin-right: 50px;
+}
+
+#p-follow{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color : white;
+    font-size: 17px;
+}
+
+.p-socmed{
+    line-height: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+.p-socmed a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    
+}
+
+.li-socmed{
+    list-style-type: none;
+}
+
+.img-socmed img{
+    width: 12px;
+    height: auto;
+}
+
+.img-socmed{
+    width: 20px;
+}
+
+#tbl-footer tr{
+    height: 25px;
+}

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700|Roboto');
+
+#main-profile{
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    height: 515px;
+
+}
+
+#img-profile{
+    margin-top: 63px;
+    margin-bottom: 13px;
+    width: 174px;
+    height: 174px;
+
+}
+
+#name-profile{
+    font-size: 45px;
+    font-family: 'Muli', sans-serif;
+    color: white;
+    font-weight: 400
+
+}
+
+#p-malang{
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    color : white;
+}
+
+#span-loc{
+    width: 16.43px;
+    height: 21px;
+}
+
+#p-java{
+    font-size: 20px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 600;
+    color : white;
+    margin-bottom: 19px;
+}
+
+#btn-cv{
+    padding: 0;
+    font-size: 16px;
+    width: 192px;
+    height: 53px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 700;
+    color : white;
+    background-color: #F47522;
+}
+/* END PROFILE CSS */
+
+
+.container-content{
+
+    padding: 0 100px;
+}
+
+
+
+#row-content{
+    padding-left: 46px;
+    padding-top: 31px;
+    padding-bottom: 76px;
+    padding-right: 57px;
+    margin-top: 70px;
+    margin-bottom: 139px;
+    border: 1px solid #DEDEDE;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+ 
+}
+
+@media only screen and (max-width: 767px) {
+    .container-content{
+
+        padding: 0 0px;
+    }
+
+    #row-content{
+
+        margin: 8px;
+    }
+}
+
+
+.h-content{
+    font-family: 'Muli', sans-serif;
+    font-weight: 700;
+    margin-bottom: 35px;
+    color : #19345E;
+}
+.p-content{
+    max-width: 370px;
+    width: 100%;
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    color : #1C1C1C;
+    font-size: 14px;
+}
+
+#span-alterra{
+    color :#F47522;
+}
+
+/* END CONTENT */

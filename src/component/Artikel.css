@@ -1,0 +1,11 @@
+.card {
+    width: 40rem;
+}
+
+.card-title{
+    font-size: 20px; 
+}
+
+.card-post{
+    font-size: 13px;
+}

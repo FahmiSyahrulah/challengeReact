@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700|Roboto');
+#gambar{
+    width: 305px;
+    height: 305px;
+    border-radius: 4%;
+    margin-bottom: 20px;
+    /* justify-content: center; */
+}
+
+#icon{
+    margin-right: 10px;
+}
+hr{
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    color:#7C7D82; /* old IE */
+    background-color:#7C7D82; /* Modern Browsers */
+}
+h4{
+    color: #19345E;
+    margin-top: 10px;
+    font-family: 'Muli', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+#logo{
+    width: 133.52px;
+    height: 66.17px;
+}
+#contain1{
+    margin-top: 50px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* width: 75%; */
+}
+
+#top-img{
+
+margin-top: 50px;
+
+}
+
+.gal-item{
+    width: 305px;
+    height: 305px;
+}
+
+.gallery-item{
+    padding: 5px;
+}
+
+.gallery-item:hover{
+    -ms-transform: rotate(10deg); /* IE 9 */
+  -webkit-transform: rotate(10deg); /* Safari 3-8 */
+  transform: rotate(10deg);
+  transition-duration: 0.5s;
+}
+
+#socmed{
+    color: white;
+}
+.nav-link{
+    color: #19345E;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+}
+.active{
+    color: #F47522 !important;
+}
+#main-nav{
+    
+    min-width: 300px;
+    width: 100%;
+   
+}
+
+#main-nav li a{
+    font-size: 14px;
+    color: #19345E;
+}
+
