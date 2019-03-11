@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700|Roboto');
+
+
+
+#img-logo{
+    margin-top: 250px;
+    width: 200px;
+    height: auto;
+    
+}
+h3{
+    font-family: 'Muli', sans-serif;
+    font-size: 28px;
+    color: #19345E;
+    font-weight: 700;
+}
+
+#p-send{
+    font-size: 12px;
+    color: #535353;
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+}
+
+.input-text{
+    margin-left: 15px;
+    text-decoration: none;
+    border: none;
+    width: 85%;
+
+}
+
+.img-text{
+    margin-top: 3px;
+    float: left;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+#img-email{
+    margin-top: 5px;
+    width: 20px;
+    height: 15px;
+}
+
+#img-phone{
+    position: relative;
+    left: 4px;
+    margin-right: 5px;
+    margin-top: 3px;
+    width: 15px;
+    height: 20px;
+}
+
+.outer-text{
+    float: left;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #00A0D0;
+}
+
+.clear-float{
+    clear: both;
+}
+
+.p-label{
+    font-size: 14px;
+    font-weight: 700;
+    margin: 9px 0;
+}
+
+
+#container-right{
+    background-color: white;
+    height: 100%;
+
+}
+
+#container-left{
+    
+    background-image: url(../img/side-view.jpg);
+    background-color: #19345E;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+}
+
+
+#content-right{
+    background-color: white;
+    height: 100%;
+
+    padding-bottom: 16px;
+}
+
+select{
+    background-color: white;
+    border: 1px solid #00A0D0;
+    border-radius: 5px;
+    padding: 9px 10px;
+}
+
+select option{
+    margin: 40x !important;
+    background: rgb(201, 184, 184) !important;
+    color: white !important;
+}
+
+
+
+
+#comment{
+    height: 120px;
+    border-radius: 5px;
+    border: 1px solid #00A0D0;
+    resize: none;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+#submit-button{
+    border: none;
+    border-radius: 10px;
+    margin-top: 1px;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #F47522;
+}
+
+.red{
+    color: red;
+}
