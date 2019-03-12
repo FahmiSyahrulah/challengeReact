@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import './Header.css';
+import {Link} from "react-router-dom";
 
-class Header extends Component {
-  render() {
+const Header = props => {
     return (
-      <div className="App">
         <header> 
             <div className="container">
                 <div className="row justify-content-md-between">
@@ -14,23 +13,33 @@ class Header extends Component {
                     <div className="mb-1 mt-md-4 col-md-6">
                         <ul id="main-nav" className="nav nav-justified">
                             <li className="nav-item">
-                                <a className="nav-link nav-active" href="#">ABOUT</a>
+                                <Link to="/">BLOG</Link>
                             </li>   
                             <li className="nav-item">
-                                <a className="nav-link" href="galeri.html">GALLERY</a>
+                                <Link to="/home">HOME</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="contact.html">CONTACT</a>
-                            </li>   
+                                <Link to="/galeri">GALERI</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/about">ABOUT</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/profile">PROFILE</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/signin">SIGNIN</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/" onClick={() => props.postSignout()}>LOGOUT</Link>
+                            </li>
                         </ul>
 
                     </div>
                 </div>
             </div>
         </header>
-      </div>
     );
   }
-}
 
 export default Header   ;
