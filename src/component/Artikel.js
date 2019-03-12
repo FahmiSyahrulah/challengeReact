@@ -6,12 +6,12 @@ class Artikel extends Component {
   render() {
     return (
         <div class="card">
-        <img class="card-img-top" src={require('../img/konser.jpg')} alt=""/>
+        <img class="card-img-top" src={this.props.img} alt=""/>
         <div class="card-body">
         <p class="card-post">Posted at 12-02-2019</p>
-        <p class="card-post">Oleh : Fahmi</p>
-        <p class="card-title">Konser musik berakhir ricuh </p>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-post">Oleh : {this.props.author}</p>
+        <p class="card-title">{this.props.title} </p>
+          <p class="card-text">{this.props.content}</p>
         </div>
       </div>
     );

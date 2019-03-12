@@ -9,21 +9,14 @@ import Galeri from './component/Galeri';
 import Search from './component/Search';
 import Artikel from './component/Artikel';
 import Sidebar from './component/Sidebar';
+import AppAjax from './containercomponent/ContainerBlog';
 
 class App extends Component {
   render() {
     return (
       <div>
         <Header />
-        <Search />
-        <div class="row">
-            <div class = "col-md-4">
-            <Sidebar />
-            </div>
-            <div class = "col-md-8">
-            <Artikel />
-            </div>
-        </div>
+        <AppAjax />
         <Footer />
       </div>
     );
