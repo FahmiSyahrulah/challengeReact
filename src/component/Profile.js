@@ -1,13 +1,13 @@
-import React from "react";
+import React, {Component} from "react";
 import {Redirect} from "react-router-dom";
+import { connect} from "unistore/react";
+import {actions} from "../Store";
+import {withRouter} from "react-router-dom";
 
-const Profile = props => {
-    const is_login = JSON.parse(localStorage.getItem("is_login"));
-    const email = localStorage.getItem("email");
-    const full_name = localStorage.getItem("full_name");
-    console.log("is_login", is_login);
 
-    if (is_login === null) {
+class Profile extends Component {
+    render(){
+    if (!this.props.isLogin) {
         return <Redirect to={{
                 pathname: "/signin"
             }}/>;
@@ -17,15 +17,16 @@ const Profile = props => {
                 <h1>PROFILE</h1>
                 <p>
                     <label>Email:</label>
-                    {email}
+                    {this.props.email}
                 </p>
                 <p>
                     <label>Full Name:</label>
-                    {full_name}
+                    {this.props.full_name}
                 </p>
             </section>
-        )
+        );
+    }
     }
 };
 
-export default Profile;
+export default connect('isLogin, email, full_name', actions)(withRouter(Profile));

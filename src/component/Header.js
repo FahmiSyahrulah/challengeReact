@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './Header.css';
 import {Link} from "react-router-dom";
+import { withRouter } from "react-router-dom";
+import { connect} from "unistore/react";
+import {actions} from "../Store";
+
 
 const Header = props => {
     return (
@@ -31,7 +35,7 @@ const Header = props => {
                                 <Link to="/signin">SIGNIN</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/" onClick={() => props.postSignout()}>LOGOUT</Link>
+                                <Link to="/" onClick={() => this.props.postLogout()}>LOGOUT</Link>
                             </li>
                         </ul>
 
@@ -42,4 +46,4 @@ const Header = props => {
     );
   }
 
-export default Header   ;
+  export default connect(actions)(withRouter(Header));
