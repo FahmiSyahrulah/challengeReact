@@ -21,7 +21,6 @@ class AppAjax extends Component {
             search: "",
             isLogin: false
         };
-        // this.handleChange=this.handleChange.bind(this)
     }
     componentDidMount = () => {
         const self = this;
@@ -72,7 +71,7 @@ class AppAjax extends Component {
             }
         }
     };
-    handleChange (e) {
+    handleChange = e => {
         let kategori = e.target.textContent;
         console.log('kategori    : ', kategori)
         const urlEndPoint = baseUrl + "everything?q="+kategori+"&apiKey=" + apiKey;
@@ -98,21 +97,7 @@ class AppAjax extends Component {
                     <div className="row justify-content-md-between">
                     <Search doSearch = {this.handleInputChange} />
                     <div className="mb-1 mt-md-4 col-md-6">
-                    {/* <Kategori doSearching = {this.handleChange}/> */}
-                    <ul id="main-nav" className="nav nav-justified">
-                            <li className="nav-item">
-                                <a className="nav-link" href="#" onClick={(e) => this.handleChange(e)}>Sports</a>
-                            </li>   
-                            <li className="nav-item">
-                                <a className="nav-link" href="#" onClick={(e) => this.handleChange(e)}>Politics</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#" onClick={(e) => this.handleChange(e)}>Business</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#" onClick={(e) => this.handleChange(e)}>Lifestyle</a>
-                            </li>      
-                        </ul>
+                    <Kategori doSearching = {this.handleChange}/>
                     </div>
                 </div>
             </div>

@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App1 from './App1';
-import App2 from './App2';
 import App from './App';
 import Ajax from './approute';
 import Contact from './component/Contact';

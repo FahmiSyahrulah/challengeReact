@@ -16,15 +16,14 @@ class Signin extends Component {
     };
     const self = this;
     axios
-    .post("https://atareact.free.beeceptor.com/auth", data)
+    .post("https://login.free.beeceptor.com/login", data)
     .then(function(response){
       console.log(response.data);
-      if (response.data.hasOwnProperty("api_key")) {
-        localStorage.setItem("api_key", response.data.api_key);
+      if (response.data.hasOwnProperty("full_name")) {
         localStorage.setItem("is_login", true);
         localStorage.setItem("full_name", response.data.full_name);
         localStorage.setItem("email", response.data.email);
-        self.props.history.push("/profil")
+        self.props.history.push("/profile")
       }
     })
     .catch(function(error){
